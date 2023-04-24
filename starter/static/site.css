@@ -1,0 +1,82 @@
+.melon-image {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black
+}
+
+#melon-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: 10px;
+    border: 10px solid black;
+    color: darkblue;
+}
+
+.baseh1{
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+
+body{
+    
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxafN_Cgb3C_j6LE2xtTFo60uh2AJ2OZvw9A&usqp=CAU) ;
+}
+
+.container-fluid{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc4cIXWl_go3fVbc0HG69psxZ6SG9IkOWw4Q&usqp=CAU);
+
+}
+
+.navbar-brand{
+    font-size: 50px;
+    border: 3px solid red;
+    border-radius: 20px;
+}
+hr{
+    height:10px;
+    border:5px solid black;
+    background-color:#00A4BD;
+}
+
+.mainpara{
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+  }
+  form input#name,
+  form input#email,
+  form input#subject {
+    width: 400px;
+    background-color: #fafafa;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    font-size: 1.1em;
+  }
+  form textarea#message {
+    width: 500px;
+    height: 100px;
+    background-color: #fafafa;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.1em;
+  }

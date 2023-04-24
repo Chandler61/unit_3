@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Shopping Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/site.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ubermelon</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <!-- <nav> -->
+                        <a class="nav-link" href="/melons">All Melons</a>
+                        <a class="nav-link" href="/cart">My Shopping Cart</a>
+                        {% if 'username' in session %}
+                            <a class="nav-link" href="/logout">Log Out</a>
+                        {% else %}
+                            <a class="nav-link" href="/login">Log In</a>
+                        {% endif %}
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    <!-- </nav> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <div class="container">
+        {% for message in get_flashed_messages() %}
+           <p class="alert alert-warning">{{ message }}</p>
+        {% endfor %}
+
+    <!-- This is where the main content goes. -->
+    {% block body %}
+        <h1 class="baseh1" >The best melon page out there</h1>
+        <hr>
+        <P class="mainpara">On this simple website you can use the nav bar at the top of the page
+            to see all melons, see your cart and login to your account! Once logged
+            into your account you can add melons to your cart and from there
+            you can empty you cart as well if you want to start fresh! Get ya melon on!!
+        </P>
+
+    {% endblock %}
+
+  </div>
+
+</body>
+</html>
